@@ -13,7 +13,7 @@ on:
 
 jobs:
   linux:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v3
