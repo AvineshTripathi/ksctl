@@ -12,7 +12,7 @@ import (
 	util "github.com/kubesimplify/ksctl/api/utils"
 )
 
-// isValidSizeHA validates the VM size
+// isValidSizeHA validates the VM size <try>
 func isValidSizeHA(size string) bool {
 	validSizes := []string{
 		"g3.xsmall",
@@ -27,6 +27,7 @@ func isValidSizeHA(size string) bool {
 			return true
 		}
 	}
+	
 	fmt.Printf("\n\n\033[34;40mAvailable Node sizes:\n- g3.xsmall\n- g3.small\n- g3.medium\n- g3.large\n- g3.xlarge\n- g3.2xlarge\033[0m\n")
 	return false
 }
